@@ -3,6 +3,7 @@ import './App.css';
 import EmployeeLIst from './Pages/EmployeeList/EmployeeLIst';
 import AddEmployee from './Pages/AddEmployee/AddEmployee';
 import EditEmployee from './Pages/EditEmployee/EditEmployee';
+import EmployeeDetails from './Pages/EmployeeDetails/EmployeeDetails';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' element={<EmployeeLIst></EmployeeLIst>}></Route>
         <Route path='/add-employee' element={<AddEmployee></AddEmployee>}></Route>
         <Route path='/edit-employee' element={<EditEmployee></EditEmployee>}></Route>
+        <Route path='/employee-details' element={<EmployeeDetails></EmployeeDetails>}></Route>
       </Routes>
     </div>
   );

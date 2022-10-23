@@ -17,8 +17,14 @@ const EmployeeLIst = () => {
     const navigateEditEmployeePage = () => {
         navigate('/edit-employee')
     }
-
-    // Navigate to Update Employee page
+    // Navigate to Employee detail page
+    const navigateEmployeeDetailsPage = () => {
+        navigate('/employee-details')
+    }
+    // Delete Employee
+    const deleteEmploye = () => {
+        console.log('Delete User')
+    }
     return (
         <div className='page_margin_top'>
             <h2 className='page_title'>Employee List</h2>
@@ -41,8 +47,8 @@ const EmployeeLIst = () => {
                           <td className='td_padding table_content'>demo11@gmail.com</td>
                           <td className='td_padding flex'>
                               <button onClick={navigateEditEmployeePage} className='employee_list_btn flex'>Edit <BiEditAlt className='employee_list_table_icon'/></button>
-                              <button className='employee_list_btn flex'>Details <BiDetail className='employee_list_table_icon'/></button>
-                              <button className='employee_list_btn_delete flex'>Delete <RiDeleteBinLine className='employee_list_table_icon'/></button>
+                              <button onClick={navigateEmployeeDetailsPage} className='employee_list_btn flex'>Details <BiDetail className='employee_list_table_icon'/></button>
+                              <button onClick={deleteEmploye} className='employee_list_btn_delete flex'>Delete <RiDeleteBinLine className='employee_list_table_icon'/></button>
                               </td>
                         </tr>
                     </tbody>
