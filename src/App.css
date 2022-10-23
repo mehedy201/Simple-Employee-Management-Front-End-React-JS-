@@ -1,10 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 
 
-.App {
-  text-align: center;
-}
-
-body{
-  font-family: 'SF Pro Display', sans-serif;
-}
