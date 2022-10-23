@@ -33,10 +33,10 @@ const EmployeeLIst = () => {
                 <table className='w-full mt-4 justify-start'>
                     <thead  className='border-b'>
                         <tr>
-                          <th className='w-3/12 th_padding'>First Name</th>
-                          <th className='w-3/12 th_padding'>Last Name</th>
-                          <th className='w-3/12 th_padding'>Email</th>
-                          <th className='w-3/12 th_padding'>Action</th>
+                          <th className='w-3/12'><p className='table_title'>First Name</p></th>
+                          <th className='w-3/12'><p className='table_title'>Last Name</p></th>
+                          <th className='w-3/12'><p className='table_title'>Email</p></th>
+                          <th className='w-3/12'><p className='table_last_item'>Action</p></th>
                         </tr>
                     </thead>
                     
