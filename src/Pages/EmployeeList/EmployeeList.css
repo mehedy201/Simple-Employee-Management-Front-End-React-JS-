@@ -1,5 +1,6 @@
 .page_margin_top{
-    margin-top: 56px;
+    padding-top: 56px;
+    height: 100%;
 }
 .page_title{
     font-style: normal;
@@ -72,4 +73,30 @@ th{
     height: 13px;
     color: white;
     margin-left: 13.56px;
+}
+.set_modal_width{
+    width: 295px !important;
+    padding-top: 58px !important;
+    padding-bottom: 59px !important;
+}
+.pop_up_title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.64px;
+    color: #4B5563;
+}
+.modal_button_1{
+    width: 207px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #60A5FA;
+    color: #E5E7EB;
+}
+.modal_button_2{
+    width: 207px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #D9D9D9;
+    color: #6D7280;
+    margin-top: 22px;
 }
