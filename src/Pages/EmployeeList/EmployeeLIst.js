@@ -3,13 +3,19 @@ import './EmployeeList.css';
 import { AiOutlinePlus } from 'react-icons/ai';
 import { BiEditAlt, BiDetail } from 'react-icons/bi';
 import { RiDeleteBinLine } from 'react-icons/ri';
+import { useNavigate } from 'react-router-dom';
 
 const EmployeeLIst = () => {
-    return (
-        <div className='container employee_page'>
-            <h2 className='page_title'>Hi Employee</h2>
-            <button className='employee_list_page_button flex justify-center items-center'><AiOutlinePlus className='plus_icon' />Add new employee</button>
+    // Navigate to add Employee page
+    const navigate = useNavigate()
 
+    const navigateAddEmployee = () => {
+        navigate('/add-employee')
+    }
+    return (
+        <div className='page_margin_top'>
+            <h2 className='page_title'>Employee List</h2>
+            <button onClick={navigateAddEmployee} className='employee_list_page_button flex justify-center items-center'><AiOutlinePlus className='plus_icon' />Add new employee</button>
             <div>
                 <table className='w-full mt-4 justify-start'>
                     <thead  className='border-b'>
