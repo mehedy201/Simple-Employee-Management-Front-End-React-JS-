@@ -6,12 +6,19 @@ import { RiDeleteBinLine } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
 
 const EmployeeLIst = () => {
-    // Navigate to add Employee page
+    // useNavigate hook form react
     const navigate = useNavigate()
 
+    // Navigate to add Employee page
     const navigateAddEmployee = () => {
         navigate('/add-employee')
     }
+    // Navigate to Edit Employee page
+    const navigateEditEmployeePage = () => {
+        navigate('/edit-employee')
+    }
+
+    // Navigate to Update Employee page
     return (
         <div className='page_margin_top'>
             <h2 className='page_title'>Employee List</h2>
@@ -33,7 +40,7 @@ const EmployeeLIst = () => {
                           <td className='td_padding table_content'>Hasan</td>
                           <td className='td_padding table_content'>demo11@gmail.com</td>
                           <td className='td_padding flex'>
-                              <button className='employee_list_btn flex'>Edit <BiEditAlt className='employee_list_table_icon'/></button>
+                              <button onClick={navigateEditEmployeePage} className='employee_list_btn flex'>Edit <BiEditAlt className='employee_list_table_icon'/></button>
                               <button className='employee_list_btn flex'>Details <BiDetail className='employee_list_table_icon'/></button>
                               <button className='employee_list_btn_delete flex'>Delete <RiDeleteBinLine className='employee_list_table_icon'/></button>
                               </td>

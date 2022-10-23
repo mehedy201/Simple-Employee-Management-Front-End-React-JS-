@@ -8,7 +8,7 @@ const AddEmployee = () => {
 
     // Handle Form Function
     const handleAddEmployeeButton = () => {
-        navigate('/edit-employee')
+        navigate('/')
     }
     return (
         <div className='page_margin_top'>
