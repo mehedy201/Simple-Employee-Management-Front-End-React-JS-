@@ -10,6 +10,7 @@
     color: #000000;
     margin-bottom: 0px;
 }
+
 .employee_list_page_button{
     margin-top: 24px;
     background-color: transparent;
@@ -126,3 +127,30 @@
     color: #6D7280;
     margin-top: 22px;
 }
+
+
+
+.main_div{
+    padding: 10px;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}
+
+.scroll_div{
+    width: 400px;
+    height: 300px;
+    overflow: auto;
+}
+
+
+@media (max-width: 1000px) {
+    .table_warp{
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .table_width{
+        width: 1000px;
+    }
+  }

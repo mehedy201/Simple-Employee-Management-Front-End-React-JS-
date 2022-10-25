@@ -29,8 +29,8 @@ const EmployeeLIst = () => {
         <div className='page_margin_top h-screen'>
             <h2 className='page_title'>Employee List</h2>
             <button onClick={navigateAddEmployee} className='employee_list_page_button flex justify-center items-center'><AiOutlinePlus className='plus_icon' />Add new employee</button>
-            <div>
-                <table className='w-full mt-4 justify-start'>
+            <div className='table_warp'>
+                <table className='table_width md:w-full mt-4 justify-start'>
                     <thead  className='border-b'>
                         <tr>
                           <th className='w-3/12'><p className='table_title'>First Name</p></th>
@@ -39,10 +39,19 @@ const EmployeeLIst = () => {
                           <th className='w-3/12'><p className='table_last_item'>Action</p></th>
                         </tr>
                     </thead>
-                    
                     <tbody>
                         <tr>
                           <td className='td_padding table_content'>Mehedi</td>
+                          <td className='td_padding table_content'>Hasan</td>
+                          <td className='td_padding table_content'>demo11@gmail.com</td>
+                          <td className='td_padding flex'>
+                              <button onClick={navigateEditEmployeePage} className='employee_list_btn flex'>Edit <BiEditAlt className='employee_list_table_icon'/></button>
+                              <button onClick={navigateEmployeeDetailsPage} className='employee_list_btn flex'>Details <BiDetail className='employee_list_table_icon'/></button>
+                              <label htmlFor="my-modal" className='employee_list_btn_delete flex cursor-pointer'>Delete <RiDeleteBinLine className='employee_list_table_icon'/></label>
+                              </td>
+                        </tr>
+                        <tr>
+                          <td className='td_padding table_content'>demo</td>
                           <td className='td_padding table_content'>Hasan</td>
                           <td className='td_padding table_content'>demo11@gmail.com</td>
                           <td className='td_padding flex'>
