@@ -26,8 +26,8 @@ const EmployeeDetails = () => {
     return (
         <div className='page_margin_top'>
             <h2 className='page_title'>Employee Details</h2>
-            <div className='flex justify-between header_button_area pb-6'>
-                <button onClick={navigateAddEmployee} className='employee_list_page_button flex justify-center items-center'><AiOutlinePlus className='plus_icon' />Add new employee</button>
+            <div className='flex mt-6 justify-between header_button_area pb-6'>
+                <button onClick={navigateAddEmployee} className='employee_detail_page_button flex justify-center items-center'><AiOutlinePlus className='plus_icon' />Add new employee</button>
                 <button onClick={navigateEmployeeList} className='employee_detail_same_button px-2.5 py-3 flex items-center justify-center'>List of employees <AiOutlineUnorderedList className='employe_detail_page_icon' /></button>
             </div>
             <div className='employe_detail_content'>

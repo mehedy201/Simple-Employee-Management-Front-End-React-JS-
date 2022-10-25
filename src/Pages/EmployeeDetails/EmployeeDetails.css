@@ -1,6 +1,18 @@
 .header_button_area{
     margin-bottom: 7px;
 }
+.employee_detail_page_button{
+    background-color: transparent;
+    border: 1px solid #9CA3AF;
+    border-radius: 5px;
+    width: 144px;
+    height: 38px;
+    color: #2563EB;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
 .employee_detail_same_button{
     background-color: #60A5FA;
     border-radius: 5px;
